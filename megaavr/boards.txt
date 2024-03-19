@@ -49,6 +49,14 @@ menu.bootloader=Bootloader
 4809.menu.pinout.nano_every.program.extra_params=-P{serial.port} -e
 4809.menu.pinout.nano_every.build.compat=
 
+4809.menu.pinout.nano_every_as_programmer=Nano Every as programmer, std 48pin pinout
+4809.menu.pinout.nano_every_as_programmer.build.variant=48pin-standard
+4809.menu.pinout.nano_every_as_programmer.upload.tool=avrdude_nanoevery
+4809.menu.pinout.nano_every_as_programmer.upload.use_1200bps_touch=true
+4809.menu.pinout.nano_every_as_programmer.upload.protocol=jtag2updi
+4809.menu.pinout.nano_every_as_programmer.program.extra_params=-P{serial.port} -e
+4809.menu.pinout.nano_every_as_programmer.build.compat=
+
 # EEPROM
 4809.menu.eeprom.keep=EEPROM retained
 4809.menu.eeprom.keep.bootloader.eesave_bit=1
@@ -1633,6 +1641,14 @@ menu.bootloader=Bootloader
 809.menu.bootloader.uart3_alternative.bootloader.file=optiboot/bootloaders/mega0/{upload.speed}/Optiboot_mega0_{upload.port}_{upload.speed}_A7.hex
 809.menu.bootloader.uart3_alternative.bootloader.BOOTEND=0x02
 809.menu.bootloader.uart3_alternative.bootloader.SYSCFG0=0b1100100{bootloader.eesave_bit}
+
+809.menu.pinout.nano_every_as_programmer=Nano Every as programmer, std 48pin pinout
+809.menu.pinout.nano_every_as_programmer.build.variant=48pin-standard
+809.menu.pinout.nano_every_as_programmer.upload.tool=avrdude_nanoevery
+809.menu.pinout.nano_every_as_programmer.upload.use_1200bps_touch=true
+809.menu.pinout.nano_every_as_programmer.upload.protocol=jtag2updi
+809.menu.pinout.nano_every_as_programmer.program.extra_params=-P{serial.port} -e
+809.menu.pinout.nano_every_as_programmer.build.compat=
 
 
 ###################
